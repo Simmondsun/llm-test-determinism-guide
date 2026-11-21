@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-21",
+  "sources": [
+    {
+      "title": "Test matrix and assertions",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "type": "upstream_repository",
+      "supports": "Prompts/configurations crossed with assertions and test cases.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Prompts/configurations crossed with assertions and test cases.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Python LLM tests",
+      "url": "https://github.com/confident-ai/deepeval",
+      "type": "upstream_repository",
+      "supports": "Test cases scored by metrics and evaluators.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Test cases scored by metrics and evaluators.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "RAG metrics",
+      "url": "https://github.com/explodinggradients/ragas",
+      "type": "upstream_repository",
+      "supports": "Datasets and metrics for retrieval/generation pipelines.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Datasets and metrics for retrieval/generation pipelines.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "General evaluation framework",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "type": "upstream_repository",
+      "supports": "Datasets, solvers, tools, scorers, logs.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Datasets, solvers, tools, scorers, logs.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "LLM application scan",
+      "url": "https://github.com/Giskard-AI/giskard",
+      "type": "upstream_repository",
+      "supports": "Automated tests and reports for LLM applications.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Automated tests and reports for LLM applications.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Research benchmark harness",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "type": "upstream_repository",
+      "supports": "Standardized language-model tasks and metrics.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Standardized language-model tasks and metrics.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OpenAI Evals",
+      "url": "https://github.com/openai/evals",
+      "type": "upstream_repository",
+      "supports": "Eval specifications, datasets, and runner patterns.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Eval specifications, datasets, and runner patterns.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Model/application red teaming",
+      "url": "https://github.com/NVIDIA/garak",
+      "type": "upstream_repository",
+      "supports": "Automated probes and detectors.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Automated probes and detectors.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    }
+  ]
+}

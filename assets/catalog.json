@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "profile": 9,
+  "repository": "llm-test-determinism-guide",
+  "reviewed_on": "2026-11-21",
+  "comparison_axes": [
+    "Framework focus",
+    "Project",
+    "Evaluation unit",
+    "Best fit",
+    "Caution"
+  ],
+  "entries": [
+    {
+      "name": "Test matrix and assertions",
+      "role_or_focus": "promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "supported_claim": "Prompts/configurations crossed with assertions and test cases.",
+      "best_use": "CI regression tests, provider comparison, and red teaming.",
+      "important_boundary": "Assertion quality determines signal.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Python LLM tests",
+      "role_or_focus": "DeepEval",
+      "url": "https://github.com/confident-ai/deepeval",
+      "supported_claim": "Test cases scored by metrics and evaluators.",
+      "best_use": "Developer-oriented unit-test style evaluation.",
+      "important_boundary": "LLM judges add cost and variance.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "RAG metrics",
+      "role_or_focus": "Ragas",
+      "url": "https://github.com/explodinggradients/ragas",
+      "supported_claim": "Datasets and metrics for retrieval/generation pipelines.",
+      "best_use": "RAG experiment and regression measurement.",
+      "important_boundary": "Metric assumptions need validation for each domain.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "General evaluation framework",
+      "role_or_focus": "Inspect AI",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "supported_claim": "Datasets, solvers, tools, scorers, logs.",
+      "best_use": "Complex agent/model evaluations with auditable runs.",
+      "important_boundary": "More setup than a small assertion suite.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "LLM application scan",
+      "role_or_focus": "Giskard",
+      "url": "https://github.com/Giskard-AI/giskard",
+      "supported_claim": "Automated tests and reports for LLM applications.",
+      "best_use": "Generate and manage broad application-risk tests.",
+      "important_boundary": "Generated findings need confirmation.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Research benchmark harness",
+      "role_or_focus": "lm-evaluation-harness",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "supported_claim": "Standardized language-model tasks and metrics.",
+      "best_use": "Compare models on established academic tasks.",
+      "important_boundary": "Not an application-level CI suite.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "OpenAI Evals",
+      "role_or_focus": "evaluation registry/framework",
+      "url": "https://github.com/openai/evals",
+      "supported_claim": "Eval specifications, datasets, and runner patterns.",
+      "best_use": "Study or run compatible evaluation tasks.",
+      "important_boundary": "Repository activity and API requirements should be checked before adoption.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Model/application red teaming",
+      "role_or_focus": "garak",
+      "url": "https://github.com/NVIDIA/garak",
+      "supported_claim": "Automated probes and detectors.",
+      "best_use": "Add vulnerability-oriented testing alongside quality evals.",
+      "important_boundary": "Not a replacement for task-success tests.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    }
+  ],
+  "field_provenance": {
+    "supported_claim": "source-backed at the cited URL, subject to the recorded review date/version",
+    "best_use": "author recommendation; requires local validation",
+    "important_boundary": "author analysis unless the linked source explicitly states it"
+  }
+}

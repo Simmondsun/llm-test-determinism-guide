@@ -1,0 +1,31 @@
+schema_version: "1.0"
+freeze:
+  - application_commit
+  - prompt_and_system_policy_digest
+  - provider_and_exact_model_identifier
+  - tool_schema_digest
+  - retrieval_corpus_and_index_commit
+  - evaluator_model_prompt_and_rubric
+  - sampling_parameters_if_supported
+  - cache_and_retry_policy
+layers:
+  contract:
+    cadence: every-commit
+    examples: [json-schema, tool-argument-validation, authorization, secret-policy, parser-errors]
+    decision: any-confirmed-hard-violation-blocks
+  semantic_goldens:
+    cadence: pull-request
+    examples: [factual-slots, rubric-dimensions, citation-presence]
+    decision: compare-to-reviewed-baseline
+  repeated_samples:
+    cadence: scheduled-or-risk-triggered
+    report: [passes-over-n, wilson-95-percent-interval, effect-size, all-retries]
+    decision: [pass, regress, inconclusive]
+  human_adjudication:
+    cadence: release-or-material-risk-change
+    required_for: [borderline-result, safety-impact, baseline-promotion]
+retry_policy:
+  bounded: true
+  report_every_attempt: true
+  allowed_only_for_declared_infrastructure_classes: true
+states: [FROZEN, CONTRACT_BLOCK, QUALITY_PASS, QUALITY_REGRESS, INCONCLUSIVE, HUMAN_HOLD, ACCEPTED_BASELINE]
