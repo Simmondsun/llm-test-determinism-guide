@@ -1,5 +1,10 @@
 # Reliable LLM Regression Tests in CI
 
+
+> **Decision:** Use this guide to make LLM application regression tests reproducible enough for CI by separating exact contracts from sampled quality evidence; skip it for coding-agent task leaderboards or promises of deterministic model prose.
+>
+> **For:** application test engineers, CI maintainers, and LLM platform teams  ·  **Not for:** teams seeking byte-identical generations or a coding-agent benchmark
+
 LLM output is not made deterministic by putting it in a unit-test runner. Reliable CI separates exact software contracts from sampled quality evidence and freezes every controllable source of drift.
 
 This guide targets **application regression CI**. It does not compare coding agents on repository tasks (the purpose of `coding-agent-eval-starter`) and does not red-team live third-party systems.
@@ -85,6 +90,14 @@ Re-run baseline calibration after a deliberate model/evaluator/corpus change. Pr
 
 Sources: [`sources/sources.json`](sources/sources.json).
 
+## Adjacent guides
+
+- [coding-agent-eval-starter](https://github.com/Dallashubgit/coding-agent-eval-starter) — Use it when the unit under evaluation is a coding agent completing repository or terminal tasks.
+- [code-rag-chunking-benchmark](https://github.com/Mustafa1801/code-rag-chunking-benchmark) — Use it when retrieval strategy, rather than generation alone, is the variable under test.
+- [ai-research-reproducibility](https://github.com/Lindenberg668/ai-research-reproducibility) — Use it when a CI result must graduate into a reviewable research claim packet.
+
 ## License
 
 Original protocol and CI-pyramid artifact are available under CC BY 4.0. Linked frameworks retain their licenses.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
